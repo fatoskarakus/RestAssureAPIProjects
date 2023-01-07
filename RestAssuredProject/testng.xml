@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAssuredApiTest">
+    <listeners>
+        <listener class-name="TestListener"/>
+    </listeners>
+    <test thread-count="3" name="RestAssuredApiTest">
+        <!--            <parameter name="browser" value="Chrome"></parameter>-->
+        <classes>
+            <class name="RestAssureAPITest.TC001_GET_REQUEST"/>
+            <class name="RestAssureAPITest.TC002_POST_REQUEST"/>
+            <class name="RestAssureAPITest.TC003_GET_REQUEST"/>
+            <class name="RestAssureAPITest.TC004_GET_REQUEST_PrintAllHeaders"/>
+            <class name="RestAssureAPITest.TC005_GET_JSON_RESPONSE"/>
+            <class name="RestAssureAPITest.TC006_GET_REG_VALIDATE_EACH_NODE"/>
+            <class name="RestAssureAPITest.TC007_GET_REQUEST_AUTHERIZETION"/>
+        </classes>
+    </test>
+</suite>
